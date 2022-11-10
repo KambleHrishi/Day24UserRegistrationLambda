@@ -48,6 +48,16 @@ namespace Day24UserRegistrationLambda
             bool result = regex.IsMatch(password);
             Console.WriteLine(result);
         }
+
+        public const string PASSWORDContain_1UPPERCASE = @"[A-Z]{1}[a-zA-Z]{7}$";
+
+        public void PasswordUppercase(string uppercase)
+        {
+            Regex regex = new Regex(PASSWORDContain_1UPPERCASE);
+            bool result = regex.IsMatch(uppercase);
+            Console.WriteLine(result);
+        }
+
     }
 
 }

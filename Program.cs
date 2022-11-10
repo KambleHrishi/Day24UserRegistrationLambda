@@ -24,6 +24,10 @@
             Console.WriteLine("Enter valid Password: ");
             string pass = Console.ReadLine();
             form.Password(pass);
+
+            Console.WriteLine("Enter Password Contain 1 Uppercase: ");
+            string password = Console.ReadLine();
+            form.Password(password);
         }
     }
 }
