@@ -33,6 +33,14 @@ namespace Day24UserRegistrationLambda
             bool result = regex.IsMatch(emailid);
             Console.WriteLine(result);
         }
+        public const string MOBILE_NUMBER = @"[0-9]{2}\s+[1-9]{10}$";
+
+        public void MobileNumber(string mobileno)
+        {
+            Regex regex = new Regex(MOBILE_NUMBER);
+            bool result = regex.IsMatch(mobileno);
+            Console.WriteLine(result);
+        }
     }
 
 }
