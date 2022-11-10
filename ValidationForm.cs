@@ -16,5 +16,15 @@ namespace Day24UserRegistrationLambda
             bool result = regex.IsMatch(firstname);
             Console.WriteLine(result);
         }
+
+        public const string LAST_NAME_REGEX = @"^[A-Z]{1}[a-zA-Z]{2,9}$";
+
+        public void LastName(string lastname)
+        {
+            Regex regex = new Regex(LAST_NAME_REGEX);
+            bool result = regex.IsMatch(lastname);
+            Console.WriteLine(result);
+        }
     }
+
 }
