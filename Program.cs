@@ -32,6 +32,10 @@
             Console.WriteLine("Enter Password Contain 1 Numeric: ");
             string num = Console.ReadLine();
             form.PasswordNumeric(num);
+
+            Console.WriteLine("Enter Password Contain 1 SpecialChar: ");
+            string character = Console.ReadLine();
+            form.PasswordSpeicalChar(character);
         }
     }
 }

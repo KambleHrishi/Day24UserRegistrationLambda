@@ -67,6 +67,14 @@ namespace Day24UserRegistrationLambda
             Console.WriteLine(result);
         }
 
+        public const string PASSWORD_SPECIALCharacter = @"[a-zA-Z0-9]{1}[A-Z][0-9][@#$%&*_-]+[a-zA-Z0-9]$";
+        public void PasswordSpeicalChar(string speical)
+        {
+            Regex regex = new Regex(PASSWORD_SPECIALCharacter);
+            bool result = regex.IsMatch(speical);
+            Console.WriteLine(result);
+        }
+
     }
 
 }
