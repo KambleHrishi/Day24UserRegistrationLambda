@@ -35,6 +35,7 @@ namespace Day24UserRegistrationLambda
             bool Password(string password) => (Regex.IsMatch(password, USERPASSWORD_REGEX));
         }
 
+
     }
 
 }

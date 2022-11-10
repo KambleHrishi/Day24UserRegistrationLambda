@@ -25,5 +25,6 @@
             string password = Console.ReadLine();
             patternValidation.ValidationPassword(password);
         }
+
     }
 }
