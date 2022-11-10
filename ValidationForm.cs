@@ -41,6 +41,13 @@ namespace Day24UserRegistrationLambda
             bool result = regex.IsMatch(mobileno);
             Console.WriteLine(result);
         }
+        public const string PASSWORD = @"[a-zA-Z]{8}$";
+        public void Password(string password)
+        {
+            Regex regex = new Regex(PASSWORD);
+            bool result = regex.IsMatch(password);
+            Console.WriteLine(result);
+        }
     }
 
 }
