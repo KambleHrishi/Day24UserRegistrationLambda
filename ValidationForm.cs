@@ -58,6 +58,15 @@ namespace Day24UserRegistrationLambda
             Console.WriteLine(result);
         }
 
+        public const string PASSWORD_Numeric = @"[a-zA-Z][A-Z][0-9]+[a-zA-Z]$";
+
+        public void PasswordNumeric(string numeric)
+        {
+            Regex regex = new Regex(PASSWORD_Numeric);
+            bool result = regex.IsMatch(numeric);
+            Console.WriteLine(result);
+        }
+
     }
 
 }
